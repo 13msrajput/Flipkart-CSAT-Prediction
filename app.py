@@ -109,49 +109,49 @@ STATIC_CONFUSION = {"tp": 2261, "fp": 310, "tn": 235, "fn": 194}
 # theme
 
 DARK = {
-    "bg": "#12100e",
-    "bg_glow_1": "#2a1912",
-    "bg_glow_2": "#17203a",
-    "panel": "#1e1a15",
-    "panel_alt": "#211e1a",
-    "panel_raised": "#211e1a",
-    "border": "#332e28",
-    "border_soft": "#332e28",
-    "text": "#f7f3ec",
-    "text_dim": "#c9c1b4",
-    "text_faint": "#8e8577",
-    "accent": "#ff5a3c",
-    "accent_bright": "#ff7a5c",
-    "accent_soft": "#3a2018",
-    "accent_border": "rgba(255, 90, 60, 0.28)",
-    "good": "#3ddc84",
-    "bad": "#ff5566",
-    "warn": "#ffb84d",
-    "chart_2": "#5eb4ff",
-    "chart_3": "#c084fc",
+    "bg": "#080f0c",
+    "bg_glow_1": "#0d2318",
+    "bg_glow_2": "#0a1a14",
+    "panel": "#0e1a14",
+    "panel_alt": "#132019",
+    "panel_raised": "#172519",
+    "border": "#1f3528",
+    "border_soft": "#1a2e22",
+    "text": "#e8f5ee",
+    "text_dim": "#90b8a0",
+    "text_faint": "#4d7a5e",
+    "accent": "#34d984",
+    "accent_bright": "#5ee89a",
+    "accent_soft": "#0d2e1c",
+    "accent_border": "rgba(52, 217, 132, 0.22)",
+    "good": "#34d984",
+    "bad": "#f2566a",
+    "warn": "#f0c060",
+    "chart_2": "#38bdf8",
+    "chart_3": "#a78bfa",
 }
 
 LIGHT = {
-    "bg": "#faf3e6",
-    "bg_glow_1": "#fbe9d3",
-    "bg_glow_2": "#ffe3d8",
-    "panel": "#f5ecda",
+    "bg": "#f2f8f5",
+    "bg_glow_1": "#d8f0e6",
+    "bg_glow_2": "#e8f5f0",
+    "panel": "#e6f2ec",
     "panel_alt": "#ffffff",
     "panel_raised": "#ffffff",
-    "border": "#e8dfcd",
-    "border_soft": "#ece3d2",
-    "text": "#161513",
-    "text_dim": "#514a3d",
-    "text_faint": "#8d8271",
-    "accent": "#e04726",
-    "accent_bright": "#c93d1f",
-    "accent_soft": "#fbe4dc",
-    "accent_border": "rgba(224, 71, 38, 0.22)",
-    "good": "#12946a",
-    "bad": "#d1364a",
-    "warn": "#c67c00",
-    "chart_2": "#1d6fbf",
-    "chart_3": "#8b3fd1",
+    "border": "#c4ddd0",
+    "border_soft": "#d0e8dc",
+    "text": "#0a1f14",
+    "text_dim": "#2e5442",
+    "text_faint": "#6a9e82",
+    "accent": "#0e9e5c",
+    "accent_bright": "#0b8a4f",
+    "accent_soft": "#d0f0e0",
+    "accent_border": "rgba(14, 158, 92, 0.20)",
+    "good": "#0e9e5c",
+    "bad": "#c82d42",
+    "warn": "#b06800",
+    "chart_2": "#0369a1",
+    "chart_3": "#7c3aed",
 }
 
 
@@ -160,12 +160,12 @@ def inject_css(t):
         f"""
     <style>
 
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Fira+Code:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap');
 
     :root {{
-        --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
-        --font-serif: 'Source Serif 4', Georgia, serif;
-        --font-mono: 'JetBrains Mono', monospace;
+        --font-primary: 'Sora', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+        --font-serif: 'Playfair Display', Georgia, serif;
+        --font-mono: 'Fira Code', 'Courier New', monospace;
         --radius-xs: 4px;
         --radius-sm: 6px;
         --radius-md: 8px;
@@ -589,8 +589,8 @@ def plotly_template(t):
         layout=go.Layout(
             paper_bgcolor="rgba(0,0,0,0)",
             plot_bgcolor="rgba(0,0,0,0)",
-            font=dict(family="Inter, sans-serif", color=t["text_dim"], size=12),
-            title_font=dict(family="Inter, sans-serif", color=t["text"], size=14),
+            font=dict(family="Sora, sans-serif", color=t["text_dim"], size=12),
+            title_font=dict(family="Sora, sans-serif", color=t["text"], size=14),
             colorway=[
                 t["accent"],
                 t["chart_2"],

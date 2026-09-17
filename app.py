@@ -526,8 +526,8 @@ def icon(name, size=22, stroke_width=1.6, color="currentColor"):
 
     paths = {
         "csat": (
-            '<path d="M12 2.5l2.9 6.3 6.8.7-5.1 4.7 1.5 6.8L12 17.6l-6.1 3.4 1.5-6.8-5.1-4.7 6.8-.7z" '
-            'fill="#f5b400" stroke="#c98a00" stroke-width="1"/>'
+            '<text x="12" y="17" text-anchor="middle" font-size="16" '
+            'stroke="none" fill="none" style="font-style:normal;">🌟</text>'
         ),
         "target": (
             '<circle cx="12" cy="12" r="8.5"/>'
@@ -2410,7 +2410,7 @@ educational purposes and isn't affiliated with Flipkart.
 def main():
     st.set_page_config(
         page_title="Flipkart CSAT Intelligence Suite",
-        page_icon="⭐",
+        page_icon="🌟",
         layout="wide",
         initial_sidebar_state="expanded",
     )
